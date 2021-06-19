@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User, Post, Comment } = require('../models');
 
 router.get('/', (req, res) => {
-    console.log(req.session);
+    console.log('homepage routes', req.session);
     Post.findAll({
         order: [['created_at', 'DESC']],
         attributes: [
@@ -25,7 +25,11 @@ router.get('/', (req, res) => {
                 }
             }
         ]
-    }).then(dbPostData => res.json(dbPostData.reverse()))
+    }).then(dbPostData => {
+        console.log('dbPostData', dbPostData);
+        const posts = dbPostData.map(post => post.get({ plain: true }))
+        res.render('homepage', {posts, loggedIn: req.session.loggedIn})
+    })
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
