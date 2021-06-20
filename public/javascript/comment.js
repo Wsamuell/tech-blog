@@ -1,5 +1,6 @@
 async function commentFormHandler(event) {
     event.preventDefault();
+    console.log("comment button hit")
 
     const comment_text = document.querySelector('#comment-body').value.trim();
 

@@ -28,6 +28,7 @@ a {
 }
 .post-list {
     margin: 45px;
+    list-style-type: none;
 }
 li {
     margin: 20px;

@@ -2,6 +2,11 @@
     {{#each posts as |post|}}
     <li>
         {{> post-info post }}
+        {{!-- {{#if loggedIn}} --}}
+            <button class="button is-primary is-outlined submit comment-form">Add comment</button>    
+        {{!-- {{/if}} --}}
     </li>
     {{/each}}
 </ol>
+
+<script src="/javascript/comment.js"></script>
