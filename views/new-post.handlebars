@@ -1,6 +1,6 @@
 {{!-- new post --}}
 
-{{> post-info }}
+{{> post-info post }}
 
 {{#if loggedIn}}
 
@@ -16,7 +16,7 @@
 </form>
 {{/if}}
 
-{{> comments post.content}}
+{{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

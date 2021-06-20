@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
     <title>Tech Blog</title>
 </head>
 
@@ -18,23 +20,24 @@
             <a href="/dashboard">Dashboard</a>
             <button class="button is-danger is-medium" id="logout">Logout</button>
             {{else}}
-        <a href="/login">login</a>
+            <a href="/login" class="button is-success">login</a>
             {{/if}}
         </div>
-        <div class="logo box container">The Tech Blog</div>
+
+        <div class="logo box container">The Tech Blog...</div>
     </nav>
 
     <main>
-{{{ body }}}
+        {{{ body }}}
     </main>
 
     <footer class="">
         Sammie's Tech Blog
     </footer>
 
-{{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
-{{/if}}
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 
 </body>
 

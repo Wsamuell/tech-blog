@@ -1,15 +1,22 @@
-    <div class="box post">
-      <article class="media">
-        <div class="media-left">
-        </div>
-        <div class="media-content">
-          <div class="content">
-            <p>
-              <strong>{{title}} </strong> <small>{{username}}</small> <small>{{created_at}} </small>
-              <br>
-              {{content}}
-            </p>
-          </div>
-        </div>
-      </article>
+<div class="box post">
+  <article class="media">
+    <div class="media-left">
     </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>{{title}} </strong> <small>{{username}}</small> <small>{{created_at}} </small>
+          <br>
+          {{content}}
+        </p>
+      </div>
+      <div>
+        {{#each comments}}
+        <p>
+          <strong>{{user_id}} </strong> <small>{{comment_text}}</small>
+        </p>
+        {{/each}}
+      </div>
+    </div>
+  </article>
+</div>
