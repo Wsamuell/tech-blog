@@ -5,15 +5,19 @@
     <div class="media-content">
       <div class="content">
         <p>
-          <strong>{{title}} </strong> <small>{{username}}</small> <small>{{created_at}} </small>
+          <strong>{{title}} </strong> <br> <small>{{user.username}}</small> <br> <small>{{created_at}} </small>
+          <br>
           <br>
           {{content}}
+          <br>
+          <br>
+          <a href="/post/{{id}}" class="button is-primary">{{comment.length}} {{format_plural "comment" comments.length}}</a>
         </p>
       </div>
       <div>
         {{#each comments}}
         <p>
-          <strong>{{user_id}} </strong> <small>{{comment_text}}</small>
+          <strong>{{user.username}} </strong> <small>{{comment_text}}</small>
         </p>
         {{/each}}
       </div>

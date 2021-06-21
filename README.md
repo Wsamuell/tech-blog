@@ -1,6 +1,21 @@
 # tech-blog
 
 
+## Github link 
+https://github.com/Wsamuell/tech-blog
+
+## Heroku link 
+
+
+
+
+## Description 
+A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
+
+
+## Screenshot Images
+![screenshots of employee-tracker app](img/sc-1.png)
+
 
 ### User Story
 * AS A developer who writes about tech

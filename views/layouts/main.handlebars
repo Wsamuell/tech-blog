@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
 
+
     <title>Tech Blog</title>
 </head>
 
@@ -18,11 +19,16 @@
             <a href="/">Home</a>
             {{#if loggedIn}}
             <a href="/dashboard">Dashboard</a>
-            <button class="button is-danger is-medium" id="logout">Logout</button>
+            <button class="button is-danger is-medium home-logout" id="logout">Logout</button>
             {{else}}
             <a href="/login" class="button is-success">login</a>
             {{/if}}
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <div class="logo box container">The Tech Blog...</div>
     </nav>

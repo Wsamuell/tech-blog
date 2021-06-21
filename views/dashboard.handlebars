@@ -1,5 +1,5 @@
 <section>
-    <h2>Create New Post</h2>
+    <h2 class="description-text">Create New Post</h2>
 
     <form action="" class="new-post-form">
         <div>
@@ -16,14 +16,12 @@
 
 {{#if posts.length}}
 <section>
-    <h2>Your Posts</h2>
+    <h2 class="description-text">Your Posts</h2>
     <ol>
         {{#each posts as |post|}}
         <li>
             {{> post-info}}
-            <button>
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link button is-success">Edit Post</a>
-            </button>
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link button is-warning">Edit Post</a>
         </li>
         {{/each}}
     </ol>

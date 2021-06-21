@@ -26,25 +26,22 @@ a {
     font-weight: 800;
     opacity: .4;
 }
-.post-list {
-    margin: 45px;
+ol {
     list-style-type: none;
-}
-li {
-    margin: 20px;
-}
-section {
-    margin: 20px;
 }
 h2 {
     font-size: 30px;
 }
-.login-form, .signup-form {
-    margin: 25px 250px;
+.edit-link, .description-text {
+    margin-left: 25px;
+}
+.login-form, .signup-form, .new-post-form, .comments, .comment-form {
+    margin: 25px 80px;
     box-sizing: content-box;
+    
 }
 .new-post-form {
-    margin: 10px 120px;
+    margin: 10px 80px;
 }
 .post-content {
     margin-top: 10px;
@@ -52,6 +49,11 @@ h2 {
 .post-button {
     margin-top: 15px;
 }
+
+.post, .edit-post-form  {
+    margin: 25px 50px;
+}
+
 footer {
     display: flex;
     justify-content: center;

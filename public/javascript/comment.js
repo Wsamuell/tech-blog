@@ -1,3 +1,4 @@
+console.log("comment.js is running") //just to check that this file gets run at all
 async function commentFormHandler(event) {
     event.preventDefault();
     console.log("comment button hit")
