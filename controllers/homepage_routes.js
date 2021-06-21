@@ -27,7 +27,6 @@ router.get('/', (req, res) => {
         ]
     }).then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }))
-        console.log(posts[1].comments)
         res.render('homepage', {posts, loggedIn: req.session.loggedIn})
     })
         .catch(err => {
